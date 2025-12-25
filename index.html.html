@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelwahed DAHIR | Expert Finition</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+        :root {
+            --dark-blue: #020b12; 
+            --emerald-green: #008b8b;
+            --white: #ffffff;
+            --border-color: #f0f2f5;
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            background-color: var(--white);
+            color: var(--dark-blue);
+            overflow-x: hidden;
+        }
+
+        /* الهيدر المحسن */
+        header {
+            background: var(--dark-blue);
+            color: var(--white);
+            padding: 60px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .header-left h1 {
+            color: var(--emerald-green);
+            font-size: 2.2rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.3rem;
+            background: rgba(255,255,255,0.05);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: 0.3s;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .social-links a:hover {
+            color: var(--emerald-green);
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+            border-color: var(--emerald-green);
+        }
+
+        .header-right {
+            max-width: 500px;
+            border-left: 3px solid var(--emerald-green);
+            padding-left: 25px;
+        }
+
+        .flags {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .flags span.sep {
+            color: var(--emerald-green);
+            font-size: 1rem;
+            opacity: 0.5;
+        }
+
+        .header-right p {
+            font-size: 1rem;
+            color: #ccc;
+            margin: 0;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        .header-right strong {
+            color: var(--emerald-green);
+            font-weight: 600;
+        }
+
+        .full-divider {
+            width: 100%;
+            height: 6px;
+            background-color: var(--emerald-green);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+
+        /* شبكة الصور */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .item {
+            background: #000;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .item:hover {
+            border-color: var(--emerald-green);
+            transform: translateY(-5px);
+        }
+
+        .item img, .item video {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        footer {
+            background: var(--dark-blue);
+            color: #777;
+            text-align: center;
+            padding: 40px;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* تعديلات الهاتف */
+        @media (max-width: 992px) {
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; padding: 40px 5%; }
+            .header-right { border-left: none; border-top: 2px solid var(--emerald-green); padding-left: 0; padding-top: 25px; margin-top: 20px; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .social-links { justify-content: center; }
+            .flags { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>ABDELWAHED<br>DAHIR</h1>
+            <div class="social-links">
+                <a href="mailto:abdelwahed.dahir@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/abdelwahed-dahir-73630a299" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/abdelwahed.dahir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="flags">
+                <span>🇲🇦</span> <span class="sep">|</span> 
+                <span>🇮🇹</span> <span class="sep">|</span> 
+                <span>🇨🇦</span>
+            </div>
+            <p>
+                <strong>Parcours International :</strong> De la maîtrise artisanale apprise au <strong>Maroc</strong> à la précision technique perfectionnée à <strong>Milan</strong>, j'apporte aujourd'hui au <strong>Canada</strong> une expertise unique en systèmes intérieurs, pose de gypse et finitions haut de gamme.
+            </p>
+        </div>
+    </header>
+
+    <div class="full-divider"></div>
+
+    <main class="container">
+        <div class="portfolio-grid">
+            <div class="item" data-aos="fade-up">
+                <video controls muted playsinline poster="img/1.JPG">
+                    <source src="img/video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item" data-aos="fade-up" data-aos-delay="100"><a href="img/1.jpeg" class="glightbox"><img src="img/1.jpeg" alt="Finition 1"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="200"><a href="img/2.jpg" class="glightbox"><img src="img/2.JPG" alt="Finition 2"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="300"><a href="img/3.JPG" class="glightbox"><img src="img/3.JPG" alt="Finition 3"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="400"><a href="img/4.jpg" class="glightbox"><img src="img/4.jpg" alt="Finition 4"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="500"><a href="img/5.jpg" class="glightbox"><img src="img/5.jpg" alt="Finition 5"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="600"><a href="img/12.jpg" class="glightbox"><img src="img/12.jpg" alt="Finition 6"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="700"><a href="img/21.jpg" class="glightbox"><img src="img/21.jpg" alt="Finition 7"></a></div>
+            <div class="item" data-aos="fade-up" data-aos-delay="800"><a href="img/8.jpg" class="glightbox"><img src="img/8.jpg" alt="Finition 8"></a></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 ABDELWAHED DAHIR | Expertise Internationale en Finition
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // تفعيل الأنيكيشن
+        AOS.init({ duration: 1000, once: true });
+        
+        // تفعيل عرض الصور الكبير
+        const lightbox = GLightbox({ 
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true 
+        });
+    </script>
+</body>
+</html>
+Écrire à Wahid Dahir
